@@ -1,7 +1,6 @@
 const result = document.getElementById('result');
 const resultBtn = document.getElementById('resultBtn');
 
-// resultBtn
 // solo números en los inputs
 const convert = (e) => {
     function justNumbers(k) {
@@ -16,11 +15,10 @@ const convert = (e) => {
     if (!justNumbers(e)) {
       e.preventDefault();
     }
-  }
+}
   document.getElementById('initial').addEventListener('keypress', convert);
   document.getElementById('final').addEventListener('keypress', convert);
 
-// OBTENER VALORES DE INPUT
 
 resultBtn.addEventListener('click', () => {
     //obteniendo valores de inputs
@@ -53,5 +51,4 @@ resultBtn.addEventListener('click', () => {
         // console.log(primes)
         document.getElementById('result').innerHTML = primes;
     }
-    
 })

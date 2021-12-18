@@ -4,31 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="iconn.png" type="image/x-icon">
     <title>Prime Numbers</title>
 </head>
 <body>
-    <section>
+    <section style="margin-top: 100px;">
         <div>
             <h2>Coloca un rango</h2>
-            <span>
-                N° INICIAL
+            <span style="margin-right: 15px;">
+                N° Inicial
                 <input type="text" name="" id="initial">
             </span>
             
             <span>
-                N° FINAL
+                N° Final
                 <input type="text" name="" id="final">
             </span>
             <button id="resultBtn">Ver</button>
         </div>
 
-        <div>
-            <p>Números primos:
-                <span id="result"></span>
-            </p>
+        <div class="primes">
+            <p>Números primos:</p>
+            <div id="result"></div>
         </div>
     </section>
 
     <script src="index.js"></script>
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+        }
+        input {
+            width: 70px;
+            border-radius: 5px;
+            border: none;
+            background: #f4f4f4;
+            height: 20px;
+        }
+        button {
+            width: 50px;
+            border: none;
+            background-color: #0ff9b3;
+            height: 23px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        button:hover {
+            background-color:#92ffde;
+        }
+        .primes {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            height: auto;
+        }
+        #result {
+            color: blue;
+            font-weight: 700;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+    </style>
 </body>
 </html>
