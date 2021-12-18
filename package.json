@@ -1,0 +1,19 @@
+{
+  "name": "prime-numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierinamont/prime-numbers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierinamont/prime-numbers/issues"
+  },
+  "homepage": "https://github.com/pierinamont/prime-numbers#readme"
+}
