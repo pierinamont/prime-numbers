@@ -39,19 +39,19 @@ resultBtn.addEventListener('click', () => {
         initial = 2
     }
 
-    for(let i = initial; i <= final; i++) {
-        // 0 y 1 no son primos
-        // if (i == 0 || i == 1) {
-        //     return i;
-        // }
-        if(i % i == 0 && i % 1 == 0) {
-          primes.push(i)
-          document.getElementById('result').innerHTML = primes;
+    for(let i = 2; i <= final; i++) {
+        let prime = true;
+        let maximoDivisor = Math.floor(Math.sqrt(i));
+        for(let divisor=2; divisor <= maximoDivisor; divisor++) {
+            
+            if(i%divisor == 0) {
+                prime = !prime;
+                break;
+            }
         }
-        
+        if(prime) primes.push(i);
+        // console.log(primes)
+        document.getElementById('result').innerHTML = primes;
     }
     
 })
-
-
-
